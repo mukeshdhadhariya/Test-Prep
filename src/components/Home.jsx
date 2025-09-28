@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 
 function Home() {
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -14,88 +14,45 @@ function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 -z-10 transform skew-y-3 origin-top-left"></div>
-        
+      <section className="p-2 relative py-16 md:py-24 overflow-hidden">
+  
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 -z-10 transform skew-y-3 origin-top-left"></div>
+
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-blue-600 rounded-full mr-2 animate-pulse"></span>
               Trusted by 50,000+ students
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
               Crack <span className="text-blue-600">NEET & JEE</span> with Confidence 🚀
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-lg">
+
+            <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-lg">
               AI-powered test series designed for 11th, 12th, JEE, and NEET students with personalized feedback.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-4">
               <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition-all duration-300 transform hover:-translate-y-1 flex items-center">
                 Start Free Trial
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                 </svg>
               </button>
-              <button className="px-6 py-3 bg-white hover:bg-gray-50 text-blue-600 border border-blue-600 font-medium rounded-lg shadow-sm transition-colors duration-300 flex items-center">
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+              <button className="px-6 py-3 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 text-blue-600 border border-blue-600 font-medium rounded-lg shadow-sm transition-colors duration-300 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
                 View Demo
               </button>
             </div>
-            <div className="mt-6 flex items-center text-sm text-gray-500">
-              <svg className="w-4 h-4 text-green-500 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              No credit card required • 7-day free trial
-            </div>
-          </div>
-          
-          <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-full max-w-md">
-              <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-200 rounded-full opacity-50 animate-pulse"></div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-200 rounded-full opacity-50 animate-pulse delay-500"></div>
-              <div className="relative bg-white p-6 rounded-2xl shadow-xl border border-gray-100 transform transition-transform duration-500 hover:scale-105">
-                <div className="flex justify-between items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                    </svg>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xs text-gray-500">Average improvement</p>
-                    <p className="text-2xl font-bold text-green-600">+42%</p>
-                  </div>
-                </div>
-                <h3 className="font-semibold text-gray-900">Mock Test #127</h3>
-                <p className="text-sm text-gray-500 mt-1">Physics - Rotational Motion</p>
-                <div className="mt-4 bg-gray-100 rounded-full h-2.5">
-                  <div className="bg-blue-600 h-2.5 rounded-full w-3/4 transition-all duration-1000"></div>
-                </div>
-                <div className="flex justify-between items-center mt-2 text-xs text-gray-500">
-                  <span>75% completed</span>
-                  <span>Time left: 24:36</span>
-                </div>
-                <div className="mt-6 grid grid-cols-3 gap-2 text-center">
-                  <div className="p-2 bg-green-50 rounded-lg">
-                    <div className="text-lg font-bold text-green-700">28</div>
-                    <div className="text-xs text-green-600">Correct</div>
-                  </div>
-                  <div className="p-2 bg-red-50 rounded-lg">
-                    <div className="text-lg font-bold text-red-700">5</div>
-                    <div className="text-xs text-red-600">Wrong</div>
-                  </div>
-                  <div className="p-2 bg-blue-50 rounded-lg">
-                    <div className="text-lg font-bold text-blue-700">217</div>
-                    <div className="text-xs text-blue-600">Rank</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
 
       {/* Features Section */}
       <section className="py-16">
@@ -105,7 +62,7 @@ function Home() {
             We provide everything you need to succeed in your competitive exam journey.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
             <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
@@ -138,7 +95,7 @@ function Home() {
               </li>
             </ul>
           </div>
-          
+
           <div className="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-indigo-100">
             <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
               <svg className="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +127,7 @@ function Home() {
               </li>
             </ul>
           </div>
-          
+
           <div className="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-100">
             <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
               <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -213,7 +170,7 @@ function Home() {
             Quality products and services to enhance your preparation journey
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition-transform duration-300 hover:scale-[1.02] group">
             <div className="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 relative overflow-hidden">
@@ -239,7 +196,7 @@ function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition-transform duration-300 hover:scale-[1.02] group">
             <div className="h-48 bg-gradient-to-r from-purple-500 to-pink-500 relative overflow-hidden">
               <div className="absolute top-4 right-4 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -264,7 +221,7 @@ function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition-transform duration-300 hover:scale-[1.02] group">
             <div className="h-48 bg-gradient-to-r from-green-500 to-teal-600 relative overflow-hidden">
               <div className="absolute top-4 right-4 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -290,7 +247,7 @@ function Home() {
             </div>
           </div>
         </div>
-        
+
         <div className="text-center mt-12">
           <p className="text-gray-500 text-sm">Advertisements help us keep our platform free for millions of students</p>
         </div>
@@ -301,13 +258,13 @@ function Home() {
         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-10 text-center text-white relative overflow-hidden">
           <div className="absolute -top-20 -right-20 w-40 h-40 bg-white opacity-10 rounded-full"></div>
           <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-white opacity-10 rounded-full"></div>
-          
+
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Grow with Us</h2>
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90">
-            We aim to empower students through structured test practice, smart analytics, and 
+            We aim to empower students through structured test practice, smart analytics, and
             guidance for a bright future. Join thousands already excelling with us!
           </p>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold">50,000+</div>
@@ -326,7 +283,7 @@ function Home() {
               <div className="text-sm md:text-base opacity-80 mt-2">Support</div>
             </div>
           </div>
-          
+
           <button className="mt-10 px-8 py-3 bg-white text-blue-600 font-bold rounded-lg shadow-lg transition-all duration-300 hover:scale-105 flex items-center mx-auto">
             Join Now - It's Free
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -336,7 +293,7 @@ function Home() {
         </div>
       </section>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

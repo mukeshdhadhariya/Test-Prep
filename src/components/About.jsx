@@ -32,27 +32,27 @@ function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4 md:py-16 md:px-6">
+    <div className="min-h-screen bg-gray-900 py-4 px-4  md:px-6">
       <div className="max-w-5xl mx-auto">
         {/* Profile Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white rounded-3xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start"
+          className="bg-gray-800 rounded-3xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start"
         >
           {/* Profile Image + Info */}
           <div className="flex flex-col items-center text-center md:w-1/3 md:pr-8">
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=774&q=80"
               alt="Mukesh Dhadhariya"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-md"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-gray-700 shadow-md"
             />
-            <h1 className="mt-6 text-2xl font-bold text-gray-800">
+            <h1 className="mt-6 text-2xl font-bold text-gray-100">
               Mukesh Dhadhariya
             </h1>
-            <p className="text-gray-500">Rajasthan, India</p>
-            <p className="mt-2 text-sm text-blue-600 font-medium">
+            <p className="text-gray-400">Rajasthan, India</p>
+            <p className="mt-2 text-sm text-blue-400 font-medium">
               Web Developer & Aspiring Entrepreneur
             </p>
 
@@ -65,7 +65,7 @@ function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
-                  className="text-gray-600 hover:text-blue-600 text-xl"
+                  className="text-gray-400 hover:text-blue-400 text-xl transition-colors"
                 >
                   {link.icon}
                 </motion.a>
@@ -75,12 +75,12 @@ function About() {
 
           {/* About Content */}
           <div className="mt-8 md:mt-0 md:w-2/3">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-100 mb-4">
               About Me
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-300 leading-relaxed mb-6">
               Hi 👋 I'm Mukesh, a passionate{" "}
-              <span className="font-semibold text-blue-600">Web Developer</span>{" "}
+              <span className="font-semibold text-blue-400">Web Developer</span>{" "}
               and aspiring tech entrepreneur. I enjoy building clean, scalable
               web apps that solve real-world problems and make education smarter
               and more accessible.
@@ -91,12 +91,12 @@ function About() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl border border-gray-200 mb-8"
+              className="bg-gray-700 p-6 rounded-2xl border border-gray-600 mb-8"
             >
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg font-semibold text-gray-100 mb-2">
                 🌟 My Vision
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 To create platforms that empower students preparing for exams
                 like NEET, JEE, and beyond — making learning simpler, engaging,
                 and impactful through technology.
@@ -104,7 +104,7 @@ function About() {
             </motion.div>
 
             {/* Skills Grid */}
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+            <h3 className="text-xl font-semibold text-gray-100 mb-4">
               Skills & Technologies
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-10">
@@ -127,7 +127,7 @@ function About() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 rounded-2xl text-white shadow-lg"
+              className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-2xl text-white shadow-lg"
             >
               <h3 className="text-lg font-semibold mb-2 flex items-center">
                 <FaEnvelope className="mr-2" /> Let's Connect
@@ -139,7 +139,7 @@ function About() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-blue-600 font-semibold py-2.5 px-6 rounded-full shadow hover:shadow-md transition"
+                className="bg-gray-900 text-blue-400 font-semibold py-2.5 px-6 rounded-full shadow hover:shadow-md transition"
               >
                 Get In Touch
               </motion.button>
@@ -148,6 +148,7 @@ function About() {
         </motion.div>
       </div>
     </div>
+
   );
 }
 

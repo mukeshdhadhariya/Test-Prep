@@ -2,7 +2,6 @@ import { createBrowserRouter,RouterProvider } from "react-router-dom"
 import AdminDashBoard from './components/AdminDashBoard'
 import SignIn from './auth_componets/SignIn'
 import SignUp from './auth_componets/SignUp'
-import './App.css'
 import Home from "./components/Home"
 import HomeLayout from "./components/HomeLayout"
 import ContactUs from "./components/ContactUs"
